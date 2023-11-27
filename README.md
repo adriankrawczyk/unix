@@ -56,14 +56,14 @@ cat /etc/passwd | awk -F: '{if($3 > 100) print $1}'
 ```
 # One of the most important commands. Filters output based on the pattern x.
 ```
-### Dodatkowe protipy
+### Protips
 ```
 # Searching in the manual: type ?, then the searched phrase.
 # Use n and shift+n to navigate between search results.
 # The $$ variable stores the PID of the current terminal.
 
 ```
-# LINKS :D
+### Unix info
 ```
 [Unix One-Liners](https://git.iiet.pl/1-rok/UNIXy/blob/master/one_liners.md)
 ```
