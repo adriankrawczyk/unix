@@ -1,5 +1,5 @@
+### awk
 ```
-### awk:
     opcja -F pozwala wybrać seperator. Domyślnym seperatorem jest spacja.
     np. dla plików etc/passwd struktura wygląda mniej więcej tak:
     specu:x:1000:1000:Dawid Focht,,,:/home/specu:/bin/bash
