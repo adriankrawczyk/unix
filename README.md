@@ -1,4 +1,4 @@
-### awk
+Awk
 ```
 # The `-F` option allows you to choose the separator. The default separator is a space.
 # For example, in the /etc/passwd file, the structure looks something like this:
@@ -7,7 +7,7 @@
 # Sample task - print all usernames with UID greater than 100
 cat /etc/passwd | awk -F: '{if($3 > 100) print $1}'
 ```
-### ls
+Ls
 ```
 # Basic command. Use only if specified that subdirectories do not need to be searched.
 # Parameters:
@@ -20,43 +20,43 @@ cat /etc/passwd | awk -F: '{if($3 > 100) print $1}'
 # Image explaining the structure of the ls output
 
 ```
-### find
+Find
 ```
 # File search utility. Extensive, check the documentation for specific parameters and syntax.
 # If not explicitly stated to search recursively (including subdirectories), it's easier to use ls.
 
 ```
-### wc
+Wc
 ```
 # Counts lines, characters, words, and more (in the output).
 ```
-### sort
+Sort
 ```
 # Sorts the output.
 ```
-### uniq
+Uniq
 ```
 # Removes duplicate lines (usually needs to be sorted first).
 ```
-### head -nx
+Head -nx
 ```
 # Displays the first x lines. Using a negative number displays all except the last x lines.
 # CAUTION! -1 displays all, and -2 displays all except the last one.
 
 ```
-### tail -nx
+Tail -nx
 ```
 # Same as head, but counts from the end.
 ```
-### ps
+Ps
 ```
 # Displays information about processes.
 ```
-### grep x
+Grep x
 ```
 # One of the most important commands. Filters output based on the pattern x.
 ```
-### Protips
+Protips
 ```
 # Searching in the manual: type ?, then the searched phrase.
 # Use n and shift+n to navigate between search results.
