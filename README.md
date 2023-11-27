@@ -1,12 +1,11 @@
 ### awk
 ```
-    opcja -F pozwala wybrać seperator. Domyślnym seperatorem jest spacja.
-    np. dla plików etc/passwd struktura wygląda mniej więcej tak:
-    specu:x:1000:1000:Dawid Focht,,,:/home/specu:/bin/bash
-    Tutaj seperatorem jest dwukropek.
-    Przykładowe zadanie - wypisz wszystkie nazwy użytkowników które mają UID większe od
-    100
-    komenda - cat etc/passwd | awk -F: ‘{if($3 > 100) print $1}’
+# The -F option allows you to choose the separator. The default separator is a space.
+# For example, in the /etc/passwd file, the structure looks something like this:
+# specu:x:1000:1000:Dawid Focht,,,:/home/specu:/bin/bash
+# Here, the separator is a colon.
+# Sample task - print all usernames with UID greater than 100
+cat /etc/passwd | awk -F: '{if($3 > 100) print $1}'
 ```
 ### ls
 ```
