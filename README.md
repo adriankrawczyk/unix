@@ -67,6 +67,10 @@ Protips
 ```
 [Github](https://git.iiet.pl/1-rok/UNIXy/blob/master/one_liners.md)
 ```
+man
+```
+man 5 etc/passwd
+```
 /etc/passwd
 ```
 # 1. Username (Login name): This is the name used by the system for user login. It must be unique on the system.
@@ -84,3 +88,5 @@ Protips
 # 3. Group ID (GID): A unique numerical identifier assigned to the group.
 # 4. Group Members: A comma-separated list of usernames that are members of the group.
 ```
+man
+
