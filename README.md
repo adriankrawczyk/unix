@@ -1,10 +1,12 @@
 ### awk
+```
 # The `-F` option allows you to choose the separator. The default separator is a space.
 # For example, in the /etc/passwd file, the structure looks something like this:
 # specu:x:1000:1000:Dawid Focht,,,:/home/specu:/bin/bash
 # Here, the separator is a colon.
 # Sample task - print all usernames with UID greater than 100
 cat /etc/passwd | awk -F: '{if($3 > 100) print $1}'
+```
 ### ls
 ```
 # Basic command. Use only if specified that subdirectories do not need to be searched.
