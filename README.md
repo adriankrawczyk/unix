@@ -9,62 +9,62 @@ cat /etc/passwd | awk -F: '{if($3 > 100) print $1}'
 ```
 ### ls
 ```
-    Bardzo podstawowa komenda. Na kolokwium używasz tylko jeśli zaznaczono, że nie trzeba
-    przeszukiwać podkatalogów.
-    Parametry:
-    • -l - najważniejszy parametr, wypisuje szczegóły plików w danym katalogu w formie
-    listy
-    • -a - wypisuje wszystkie pliki razem z ukrytymi(tj. Zaczynające się kropką) –
-    UWAGA – wypisuje również pliki . I ..
-    • -A - to samo co wyżej, tylko nie wypisuje plików . I ..
-    • -s – pokazuje również ilość bloków
-    • -id – wyświetla numer węzła i-node danego katalogu
-    • -d – wyświetla numery węzłów i-node dla wszystkich listowanych plików
-    obrazek tłumaczący strukturę wyniku ls
+# Basic command. Use only if specified that subdirectories do not need to be searched.
+# Parameters:
+# -l - the most important parameter, displays details of files in the directory in a list format.
+# -a - displays all files, including hidden ones (starting with a dot). Note: also displays . and ..
+# -A - same as above, but does not display . and ..
+# -s - also shows the block count
+# -i - displays the inode number
+# -d - displays inode numbers for all listed files
+# Image explaining the structure of the ls output
+
 ```
 ### find
 ```
-    Wyszukiwarka plików, bardzo rozbudowana, dobrze jest wiedzieć gdzie mniej więcej w
-    manie(dokumentacji) można szukać konkretnych parametrów i składni do tego polecenia.
-    Jeśli w poleceniu nie jest napisane, żeby wyszukiwać rekursywnie(tj. z uwzględnieniem
-    podkatalogów), łatwiej będzie użyć ls.
+# File search utility. Extensive, check the documentation for specific parameters and syntax.
+# If not explicitly stated to search recursively (including subdirectories), it's easier to use ls.
+
 ```
 ### wc
 ```
-    (w wyjściu)liczy linie, znaki,słowa i kilka innych
+# Counts lines, characters, words, and more (in the output).
 ```
 ### sort
 ```
-    sortuje wyjście
+# Sorts the output.
 ```
 ### uniq
 ```
-    usuwa powtarzające się linie(zazwyczaj trzeba posortować wcześniej)
+# Removes duplicate lines (usually needs to be sorted first).
 ```
 ### head -nx
 ```
-    wypisuje tylko x pierwszych linijek. Użycie ujemnej liczby linijek wypisuje wszystkie
-    minus x. UWAGA! -1 wypisuje wszystkie, a -2 wypisuje dopiero wszystkie prócz jednej
+# Displays the first x lines. Using a negative number displays all except the last x lines.
+# CAUTION! -1 displays all, and -2 displays all except the last one.
+
 ```
 ### tail -nx
 ```
-    to samo co head tylko liczy od końca
+# Same as head, but counts from the end.
 ```
 ### ps
 ```
-    wyświetla info o procesach
+# Displays information about processes.
 ```
 ### grep x
 ```
-    jedna z najważniejszych komend. Filtruje wyjście wg schematu x
+# One of the most important commands. Filters output based on the pattern x.
 ```
 ### Dodatkowe protipy
 ```
-    • wyszukiwanie w manualu: wpisujemy znak ?, następnie wyszukiwana fraza.
-    Klawiszami n i shift+n przemieszczamy się między wyszukiwaniami
-    • zmienna $$ przechowuje PID aktualnego terminala
+# Searching in the manual: type ?, then the searched phrase.
+# Use n and shift+n to navigate between search results.
+# The $$ variable stores the PID of the current terminal.
+
 ```
-### LINKACZE :D
+# LINKS :D
 ```
-https://git.iiet.pl/1-rok/UNIXy/blob/master/one_liners.md
+[Unix One-Liners](https://git.iiet.pl/1-rok/UNIXy/blob/master/one_liners.md)
 ```
+
