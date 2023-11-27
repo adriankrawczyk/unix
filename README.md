@@ -88,5 +88,5 @@ man 5 etc/passwd
 # 3. Group ID (GID): A unique numerical identifier assigned to the group.
 # 4. Group Members: A comma-separated list of usernames that are members of the group.
 ```
-man
+
 
