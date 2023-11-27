@@ -67,4 +67,20 @@ Protips
 ```
 [Github](https://git.iiet.pl/1-rok/UNIXy/blob/master/one_liners.md)
 ```
-
+/etc/passwd
+```
+# 1. Username (Login name): This is the name used by the system for user login. It must be unique on the system.
+# 2. Password (Encrypted or Placeholder): Traditionally, the password used to be stored in this field. However, for security reasons, modern systems store an 'x' character here, and #the actual password information is stored in the /etc/shadow file.
+# 3. User ID (UID): A unique numerical identifier assigned to each user. The root user typically has a UID of 0.
+# 4. Group ID (GID): The primary group identifier for the user. It corresponds to the group specified in /etc/group.
+# 5. User Info (GECOS): This field traditionally contains additional information about the user, such as the user's full name, phone number, etc.
+# 6. Home Directory: The absolute path to the user's home directory, where they are placed after logging in.
+# 7. Login Shell: The absolute path to the user's default shell, which is started upon login.
+```
+/etc/group
+```
+# 1. Group Name: The name of the group, which must be unique.
+# 2. Password (Encrypted or Placeholder): Similar to /etc/passwd, this field traditionally held the group password. It is rarely used today and often contains an 'x'.
+# 3. Group ID (GID): A unique numerical identifier assigned to the group.
+# 4. Group Members: A comma-separated list of usernames that are members of the group.
+```
