@@ -64,7 +64,7 @@ Protips
 
 ```
 ### Unix info
-[link](https://git.iiet.pl/1-rok/UNIXy/blob/master/one_liners.md)
+[LINK](https://git.iiet.pl/1-rok/UNIXy/blob/master/one_liners.md)
 ```
 man 5 etc/passwd
 ```
