@@ -65,3 +65,7 @@
     Klawiszami n i shift+n przemieszczamy się między wyszukiwaniami
     • zmienna $$ przechowuje PID aktualnego terminala
 ```
+### LINKACZE :D
+```
+https://git.iiet.pl/1-rok/UNIXy/blob/master/one_liners.md
+```
