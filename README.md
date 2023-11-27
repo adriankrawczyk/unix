@@ -65,6 +65,6 @@ cat /etc/passwd | awk -F: '{if($3 > 100) print $1}'
 ```
 ### Unix info
 ```
-[Unix One-Liners](https://git.iiet.pl/1-rok/UNIXy/blob/master/one_liners.md)
+[Github](https://git.iiet.pl/1-rok/UNIXy/blob/master/one_liners.md)
 ```
 
