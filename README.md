@@ -8,8 +8,8 @@
     100
     komenda - cat etc/passwd | awk -F: ‘{if($3 > 100) print $1}’
 ```
+### ls
 ```
-### ls:
     Bardzo podstawowa komenda. Na kolokwium używasz tylko jeśli zaznaczono, że nie trzeba
     przeszukiwać podkatalogów.
     Parametry:
@@ -23,44 +23,44 @@
     • -d – wyświetla numery węzłów i-node dla wszystkich listowanych plików
     obrazek tłumaczący strukturę wyniku ls
 ```
+### find
 ```
-### find:
     Wyszukiwarka plików, bardzo rozbudowana, dobrze jest wiedzieć gdzie mniej więcej w
     manie(dokumentacji) można szukać konkretnych parametrów i składni do tego polecenia.
     Jeśli w poleceniu nie jest napisane, żeby wyszukiwać rekursywnie(tj. z uwzględnieniem
     podkatalogów), łatwiej będzie użyć ls.
 ```
+### wc
 ```
-### wc:
     (w wyjściu)liczy linie, znaki,słowa i kilka innych
 ```
+### sort
 ```
-### sort:
     sortuje wyjście
 ```
+### uniq
 ```
-### uniq:
     usuwa powtarzające się linie(zazwyczaj trzeba posortować wcześniej)
 ```
+### head -nx
 ```
-### head -nx: 
     wypisuje tylko x pierwszych linijek. Użycie ujemnej liczby linijek wypisuje wszystkie
     minus x. UWAGA! -1 wypisuje wszystkie, a -2 wypisuje dopiero wszystkie prócz jednej
 ```
-```
 ### tail -nx
+```
     to samo co head tylko liczy od końca
 ```
+### ps
 ```
-### ps:
     wyświetla info o procesach
 ```
+### grep x
 ```
-### grep x:
     jedna z najważniejszych komend. Filtruje wyjście wg schematu x
 ```
+### Dodatkowe protipy
 ```
-### Dodatkowe protipy:
     • wyszukiwanie w manualu: wpisujemy znak ?, następnie wyszukiwana fraza.
     Klawiszami n i shift+n przemieszczamy się między wyszukiwaniami
     • zmienna $$ przechowuje PID aktualnego terminala
