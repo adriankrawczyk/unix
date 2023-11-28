@@ -7,6 +7,7 @@ Linux was originally developed for personal computers based on the Intel x86 arc
 Linux also runs on embedded systems, i.e. devices whose operating system is typically built into the firmware and is highly tailored to the system. This includes routers, automation controls, smart home devices, video game consoles,[32] televisions (Samsung and LG Smart TVs),[33][34][35] automobiles (Tesla, Audi, Mercedes-Benz, Hyundai and Toyota),[36] and spacecraft (Falcon 9 rocket, Dragon crew capsule and the Perseverance rover).[37][38]
 
 Linux is one of the most prominent examples of free and open-source software collaboration. The source code may be used, modified and distributed commercially or non-commercially by anyone under the terms of its respective licenses, such as the GNU General Public License (GPL). The Linux kernel, for example, is licensed under the GPLv2, with an exception for system calls that allows code that calls the kernel via system calls not to be licensed under the GPL.[39][40][21]
+
 Awk
 ```
 # The `-F` option allows you to choose the separator. The default separator is a space.
