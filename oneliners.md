@@ -1,5 +1,3 @@
-# One-linery
-
 ## pliki
 
 ### /etc
