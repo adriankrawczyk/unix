@@ -10,34 +10,68 @@ cat /etc/passwd | awk -F: '{if($3 > 100) print $1}'
 ```
 Ls
 ```
+
 # Basic command. Use only if specified that subdirectories do not need to be searched.
-# Parameters:
-# -l - the most important parameter, displays details of files in the directory in a list format.
-# -a - displays all files, including hidden ones (starting with a dot). Note: also displays . and ..
-# -A - same as above, but does not display . and ..
-# -s - also shows the block count
-# -i - displays the inode number
-# -d - displays inode numbers for all listed files
-# Image explaining the structure of the ls output
+#• -l - najważniejszy parametr, wypisuje szczegóły plików w danym katalogu w formie
+#listy
+#• -a - wypisuje wszystkie pliki razem z ukrytymi(tj. Zaczynające się kropką) –
+#UWAGA – wypisuje również pliki . I ..
+#• -A - to samo co wyżej, tylko nie wypisuje plików . I ..
+#• -s – pokazuje również ilość bloków
+#• -id – wyświetla numer węzła i-node danego katalogu
+#• -d – wyświetla numery węzłów i-node dla wszystkich listowanych plików
+#obrazek tłumaczący strukturę wyniku ls 
 
 ```
 Find
 ```
 # File search utility. Extensive, check the documentation for specific parameters and syntax.
 # If not explicitly stated to search recursively (including subdirectories), it's easier to use ls.
+# -type x – wyszukiwanie tylko plików o typie x (d-katalog, f-zwykły plik, l –
+#dowiązanie symboliczne(symlink))
+#• -name „nazwa” - wyszukiwanie plików o konkretnej nazwie. Można używać
+#specjalnych znaków tak jak w innych wyszukiwarkach typu *,?,[]
+#• -maxdepth x – zagnieżdżenie wyszukiwań – czyli ile katalogów w głąb
+#wyszukiwać. np. jeśli damy 1 wyszuka pliki tylko w danym katalogu, jeśli 0
+#wynikiem będzie tylko nazwa katalogu w którym szukamy
+#• -exec x ;\ - gdzie x jest poleceniem które wykonujemy dla każdego znalezionego
+#pliku. Nawiasy klamrowe przekazują do polecenia nazwę tego pliku. np. aby
+#wyświetlić zawartość każdego pliku w katalogu domowym (bez podkatalogów)
+#mamy polecenie: find ~ -type f -maxdepth 1 -exec cat {} \;
+#• -printf „szablon” - jeden z ważniejszych parametrów na kolokwium, przy tym
+#często trzeba zaglądnąć do manuala(przy tym parametrze w manie, są objaśnione
+#wszystkie symbole), bo ciężko zapamiętać każdy symbol. Stosując go nie
+#wyświetlamy nazw plików, tylko to co chcemy np. rozmiar, ilość bloków, albo
+#właściciela.
+#Przykładowo, jeśli chcemy dla danego katalogu wyświetlić nazwy wszystkich
+#plików wraz z rozmiarem i właścicielem(oddzielone spacją) mamy polecenie:
+#find ~ -maxdepth 1 -printf "%f %s %u \n"
+#gdzie %f to nazwa pliku, %s to rozmiar w bajtach, %u to nazwa właściciela, a \n to
+#załamanie linii(taki enter)
+#• -size – wyświetla tylko pliki o określonym rozmiarze np. pliki w /usr/bin o wielkości
+#do 1MB: find /usr/bin -size -1M
 
 ```
 Wc
 ```
 # Counts lines, characters, words, and more (in the output).
+#-l liczy linie
+#-c liczy bajty
+#-w liczy słowa
+#-m liczy znaki
 ```
 Sort
 ```
 # Sorts the output.
+#-n ( uwzględnia sortowanie liczb(chyba)) wydaję mi się, że można spokojnie używać zawsze
+#-r odwrotne sortowanie
 ```
 Uniq
 ```
 # Removes duplicate lines (usually needs to be sorted first).
+#c wypisuje wraz z liczbą powtórzeń
+#-d wypisuje tylko te które się powtórzyły
+#-uwypisuje tylko unikatowe linie
 ```
 Head -nx
 ```
@@ -52,10 +86,22 @@ Tail -nx
 Ps
 ```
 # Displays information about processes.
+#x – wyświetla listę w stylu BSD
+#u – wyświetla nazwy użytkowników
+#t – pokazuje procesy tylko z danego terminala
+#e lub a – wyświetla wszystkie procesy(jest jakaś drobna różnica między nimi, ale nie jest to
+#chyba istotne)
+#o wyświetla specjalny output(podobnie jak printf w poleceniu find) (przykłady znajdziesz na
+#https://git.iiet.pl/1-rok/UNIXy/blob/master/one_liners.md)
+#l – format długi(wyświetla więcej szczegółów)
 ```
 Grep x
 ```
 # One of the most important commands. Filters output based on the pattern x.
+#-v – negacja wyrażenia. Czyli wypisuje wszystkie które nie pasują do wyrażenia
+#W grepie można używać wyrażeń regularnych, najważniejsze symbole które powinieneś
+#znać to początek linii - ^ i koniec linii - $ . Co do reszty, do nauki polecam interaktywny interpreter
+#https://regexr.com/
 ```
 Protips
 ```
