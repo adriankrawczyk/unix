@@ -87,5 +87,34 @@ man 5 etc/passwd
 # 3. Group ID (GID): A unique numerical identifier assigned to the group.
 # 4. Group Members: A comma-separated list of usernames that are members of the group.
 ```
-
-
+ls
+```
+# 1. File Type and Permissions:
+The first character indicates the file type:
+- for regular files
+d for directories
+l for symbolic links
+and more.
+The next nine characters represent the file permissions:
+The first three characters are for the owner's permissions.
+The second three characters are for the group's permissions.
+The last three characters are for others' (non-owner, non-group) permissions.
+Each group of three characters can have the following values:
+r for read permission
+w for write permission
+x for execute permission
+- if the respective permission is not granted.
+Example: drwxr-xr-x indicates a directory with read, write, and execute permissions for the owner, and read and execute permissions for both the group and others.
+# 2. Number of Hard Links:
+This column shows the number of hard links to the file. A hard link is an additional reference to the same inode (data structure on disk) as the original file.
+# 3. Owner:
+This column displays the username of the file's owner.
+# 4. Group:
+This column shows the group associated with the file.
+# 5. File Size:
+Indicates the size of the file in bytes.
+# 6. Modification Time:
+Displays the date and time when the file was last modified.
+# 7. File or Directory Name:
+This column contains the name of the file or directory.
+```
