@@ -314,4 +314,3 @@
     ```bash
      ps T o ppid= | awk '{if($1 == 1) print "cokolwiek"}' | wc -l
     ```
-
