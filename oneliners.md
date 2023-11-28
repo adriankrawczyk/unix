@@ -301,13 +301,7 @@ Unix distinguishes itself from its predecessors as the first portable operating 
     ```bash
      ps -le | tail -n+2 | awk '{print $13” ”$14}' | awk -F : '{print 3600*$1+60*$2+$3” ”$4}' | sort -nr | head -n+1 | awk '{print $2}'
     ```
-Unix (/ˈjuːnɪks/, YOO-niks; trademarked as UNIX) is a family of multitasking, multi-user computer operating systems that derive from the original AT&T Unix, whose development started in 1969[1] at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others.[4]
 
-Initially intended for use inside the Bell System, AT&T licensed Unix to outside parties in the late 1970s, leading to a variety of both academic and commercial Unix variants from vendors including University of California, Berkeley (BSD), Microsoft (Xenix), Sun Microsystems (SunOS/Solaris), HP/HPE (HP-UX), and IBM (AIX). In the early 1990s, AT&T sold its rights in Unix to Novell, which then sold the UNIX trademark to The Open Group, an industry consortium founded in 1996. The Open Group allows the use of the mark for certified operating systems that comply with the Single UNIX Specification (SUS).
-
-Unix systems are characterized by a modular design that is sometimes called the "Unix philosophy". According to this philosophy, the operating system should provide a set of simple tools, each of which performs a limited, well-defined function.[5] A unified and inode-based filesystem and an inter-process communication mechanism known as "pipes" serve as the main means of communication,[4] and a shell scripting and command language (the Unix shell) is used to combine the tools to perform complex workflows.
-
-Unix distinguishes itself from its predecessors as the first portable operating system: almost the entire operating system is written in the C programming language, which allows Unix to operate on numerous platforms.[6]
 0. Znajdź proces, który został włączony najwcześniej
 
     ```bash
@@ -325,3 +319,17 @@ Unix distinguishes itself from its predecessors as the first portable operating 
     ```bash
      ps T o ppid= | awk '{if($1 == 1) print "cokolwiek"}' | wc -l
     ```
+Unix (/ˈjuːnɪks/, YOO-niks; trademarked as UNIX) is a family of multitasking, multi-user computer operating systems that derive from the original AT&T Unix, whose development started in 1969[1] at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others.[4]
+
+Initially intended for use inside the Bell System, AT&T licensed Unix to outside parties in the late 1970s, leading to a variety of both academic and commercial Unix variants from vendors including University of California, Berkeley (BSD), Microsoft (Xenix), Sun Microsystems (SunOS/Solaris), HP/HPE (HP-UX), and IBM (AIX). In the early 1990s, AT&T sold its rights in Unix to Novell, which then sold the UNIX trademark to The Open Group, an industry consortium founded in 1996. The Open Group allows the use of the mark for certified operating systems that comply with the Single UNIX Specification (SUS).
+
+Unix systems are characterized by a modular design that is sometimes called the "Unix philosophy". According to this philosophy, the operating system should provide a set of simple tools, each of which performs a limited, well-defined function.[5] A unified and inode-based filesystem and an inter-process communication mechanism known as "pipes" serve as the main means of communication,[4] and a shell scripting and command language (the Unix shell) is used to combine the tools to perform complex workflows.
+
+Unix distinguishes itself from its predecessors as the first portable operating system: almost the entire operating system is written in the C programming language, which allows Unix to operate on numerous platforms.[6]
+Unix (/ˈjuːnɪks/, YOO-niks; trademarked as UNIX) is a family of multitasking, multi-user computer operating systems that derive from the original AT&T Unix, whose development started in 1969[1] at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others.[4]
+
+Initially intended for use inside the Bell System, AT&T licensed Unix to outside parties in the late 1970s, leading to a variety of both academic and commercial Unix variants from vendors including University of California, Berkeley (BSD), Microsoft (Xenix), Sun Microsystems (SunOS/Solaris), HP/HPE (HP-UX), and IBM (AIX). In the early 1990s, AT&T sold its rights in Unix to Novell, which then sold the UNIX trademark to The Open Group, an industry consortium founded in 1996. The Open Group allows the use of the mark for certified operating systems that comply with the Single UNIX Specification (SUS).
+
+Unix systems are characterized by a modular design that is sometimes called the "Unix philosophy". According to this philosophy, the operating system should provide a set of simple tools, each of which performs a limited, well-defined function.[5] A unified and inode-based filesystem and an inter-process communication mechanism known as "pipes" serve as the main means of communication,[4] and a shell scripting and command language (the Unix shell) is used to combine the tools to perform complex workflows.
+
+Unix distinguishes itself from its predecessors as the first portable operating system: almost the entire operating system is written in the C programming language, which allows Unix to operate on numerous platforms.[6]
