@@ -1,6 +1,5 @@
-## pliki
 
-### /etc
+
 
 0. Ile jest osób w `/etc/passwd` o nazwisku Nowak?
 
@@ -86,7 +85,6 @@
      cat /etc/passwd | awk -F '{print $3}' | sort -n | uniq | sort -nr | head -1
     ```
 
-### inne
 
 0. Podaj nazwę pliku w katalogu domowym o największym rozmiarze
 
@@ -195,9 +193,6 @@
     ```bash
      find /usr/bin -size -1M | wc -l
     ```
-
-## procesy
-
 
 0. Pidaj PID procesu zastopowanego, który zużywa najwięcej pamięci wirtualnej
 
